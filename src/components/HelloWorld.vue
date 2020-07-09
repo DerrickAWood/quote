@@ -1,16 +1,32 @@
 <template>
   <div class="hello bg-im">
-    <button class="btn btn-lg btn-primary">Get Quote</button>
+    <button @click="getQuote()" class="btn btn-lg btn-primary">Get Quote</button>
+    <h1>{{this.newQuote}}</h1>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
+  data(){
+    return{
+      newQuote:{
+        
+      }
+    }
+  },
   props: {
     msg: String
+  },
+
+  methods: {
+  getQuote(){
+    this.$store.dispatch("getQuote")
   }
 }
+}
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
