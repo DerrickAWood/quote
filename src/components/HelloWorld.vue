@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    
+    <button class="btn btn-lg btn-primary">Get Quote</button>
   </div>
 </template>
 
