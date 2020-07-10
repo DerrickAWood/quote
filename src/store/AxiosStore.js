@@ -1,6 +1,6 @@
 import Axios from "axios";
 export const api = Axios.create({
-  baseURL: "http://quotes.stormconsultancy.co.uk/quotes/1.json",
+  baseURL: "http://quotes.stormconsultancy.co.uk/random.json",
   timeout: 3000,
   // withCredentials: true,
 });
