@@ -1,7 +1,7 @@
 <template>
   <div class="hello bg-im">
     <button @click="getQuote()" class="btn btn-lg btn-primary">Get Quote</button>
-    <h1>{{this.newQuote}}</h1>
+    <h1 v-for="quote in quotes" :key="quote.id">{{quote.quote}}</h1>
   </div>
 </template>
 
@@ -15,6 +15,10 @@ export default {
       }
     }
   },
+  computed: {
+    quotes() {
+      return this.$store.state.quotes;
+    },},
   props: {
     msg: String
   },
@@ -22,6 +26,7 @@ export default {
   methods: {
   getQuote(){
     this.$store.dispatch("getQuote")
+    console.log(this.quotes)
   }
 }
 }

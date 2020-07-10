@@ -1,6 +1,6 @@
 import Axios from "axios";
 export const api = Axios.create({
-  baseURL: "https://type.fit/api/quotes",
+  baseURL: "http://quotes.stormconsultancy.co.uk/quotes/1.json",
   timeout: 3000,
   // withCredentials: true,
 });

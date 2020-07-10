@@ -6,16 +6,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    quote: []
+    quotes: []
   },
   mutations: {
     setQuote(state, quote){
-      state.quote = quote
+      state.quotes = quote
     }
   },
   actions: {
    async getQuote({commit}){
-      let res = await api.get("*")
+      let res = await api.get("")
       commit("setQuote", res.data)
     }
   },
