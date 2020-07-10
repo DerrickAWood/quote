@@ -1,7 +1,7 @@
 <template>
   <div class="hello bg-im">
     <button @click="getQuote()" class="btn btn-lg btn-primary">Get Quote</button>
-    <h1 v-for="quote in quotes" :key="quote.id">{{quote.quote}}</h1>
+    <h1 v-for="quote in quotes" :key="quote.id">{{quote}}</h1>
   </div>
 </template>
 
