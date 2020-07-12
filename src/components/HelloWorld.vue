@@ -1,6 +1,7 @@
 <template>
   <div class="hello bg-im">
-    <button @click="getQuote()" class="btn btn-lg btn-primary">Get Quote</button>
+    <button @click="getQuote()" class="btn btn-lg btn-primary m-5">Get Quote</button>
+    
     <h1 class="text-light">{{quotes.quote}}</h1>
   </div>
 </template>
