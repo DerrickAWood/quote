@@ -1,20 +1,13 @@
 <template>
   <div class="hello bg-im">
     <button @click="getQuote()" class="btn btn-lg btn-primary">Get Quote</button>
-    <h1>{{quotes.quote}}</h1>
+    <h1 class="text-light">{{quotes.quote}}</h1>
   </div>
 </template>
 
 <script>
 export default {
   name: 'HelloWorld',
-  data(){
-    return{
-      newQuote:{
-        
-      }
-    }
-  },
   computed: {
     quotes() {
       return this.$store.state.quotes;
